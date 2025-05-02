@@ -23,8 +23,8 @@ Ever wondered what it’s like to read the internet in gibberish instead of lett
 5. Open any website and enjoy the chaos
 
 ## Sample 🌈
-Before: A dog and a cat walked into a cafe.
+Before: A dog and a cat walked into a cafe.  
 After: ۶ৎ _૮･ﻌ･ა 𐙚(˶‾᷄ ⁻̫ ‾᷅˵)꩜ 𐙚 𝑴𝒆𝒐𝒘. ฅ(•- •マ •ﻌ•𐙚ᯓ ✈︎⛇˚꩜ ﹏𓂁﹏(˶‾᷄ ⁻̫ ‾᷅˵)જ⁀➴𐦍 𐙚 ⋆.˚𐙚𓍯𓂃˚.
 
 ## To customize 🛠️ 
-Want to mess with the symbols? Open content.js and tweak the replacements dictionary to your heart’s desire.
+Open content.js and tweak the replacements dictionary.
