@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "try to read it i bet you can't",
+    "version": "1.0",
+    "description": "Replaces certain words and letters with symbols or emojis.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
