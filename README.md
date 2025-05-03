@@ -1,4 +1,4 @@
-# try to read it i bet you can't 
+# try.to.read.it.i.bet.you.can't. 
 Ever wondered what it’s like to read the internet in gibberish instead of letters? This Chrome extension replaces some words and letters with symbols, and soft aesthetic noise. Perfect for confusing friends, dodging productivity, or just making your tabs a little more ✧･ﾟweird✧･ﾟ. It takes everything you know about reading... and makes it mildly impossible. Every website becomes a cryptic wonderland of sparkles, cats, and soft unicode chaos. No reason, no rules, just for fun.  
 
 
