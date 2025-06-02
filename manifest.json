@@ -1,24 +1,20 @@
 {
-    "manifest_version": 3,
-    "name": "try to read it i bet you can't",
-    "version": "1.0",
-    "description": "Replaces certain words and letters with symbols or emojis.",
-    "permissions": [
-        "activeTab",
-        "scripting"
-    ],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "content.js"
-            ],
-            "run_at": "document_idle"
-        }
-    ]
+  "manifest_version": 3,
+  "name": "try to read it i bet you can't",
+  "version": "1.0",
+  "description": "A Chrome extension that replaces letters and words with symbols and emojis, transforming web pages into a cryptic poetic puzzle.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }

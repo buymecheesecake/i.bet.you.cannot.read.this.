@@ -18,18 +18,20 @@ const replacements = {
 };
 
 function replaceText(node) {
-  if (node.nodeType === 3) {
+  if (node.nodeType === 3 && node.parentNode && ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT'].indexOf(node.parentNode.nodeName) === -1) {
     let text = node.nodeValue;
     for (const [key, value] of Object.entries(replacements)) {
       const regex = new RegExp(key, "g");
       text = text.replace(regex, value);
     }
     node.nodeValue = text;
-  } else if (node.nodeType === 1 && node.nodeName !== "SCRIPT" && node.nodeName !== "STYLE") {
-    for (let i = 0; i < node.childNodes.length; i++) {
-      replaceText(node.childNodes[i]);
-    }
+  } else {
+    node.childNodes.forEach(child => replaceText(child));
   }
 }
 
-replaceText(document.body);
+document.addEventListener("DOMContentLoaded", () => {
+  replaceText(document.body);
+});
+
+
